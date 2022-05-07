@@ -8,9 +8,8 @@ public class SqArea {
     }
 
     public static void main(String[] args) {
-        int p, k;
-        p = 10;
-        k = 2;
+        int p = 10;
+        int k = 2;
         double result1 = SqArea.square(p, k);
         System.out.println("Прямоугольник");
         System.out.println("Периметр = " + p + ", Коэффициент = " + k + ", Площадь = " + result1);
