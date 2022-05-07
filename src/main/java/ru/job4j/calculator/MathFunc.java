@@ -15,6 +15,5 @@ public class MathFunc {
        int result2 = MathFunc.func2(5);
        int result3 = result1 + result2;
         System.out.println("Ответ: result = " + result3);
-
     }
 }
