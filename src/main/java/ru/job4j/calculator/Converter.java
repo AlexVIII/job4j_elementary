@@ -11,12 +11,14 @@ public class Converter {
     }
 
     public static void main(String[] args) {
-        float cash = 140;
-        float cashEuro = 2;
-        float euro = Converter.rubleToEuro(cash);
-        boolean result = cashEuro == euro;
-        float dollar = Converter.rubleToDollar(cash);
-        System.out.println(cash + " rubles are " + euro + " (Test result - " + result + ")");
-        System.out.println(cash + " rubles are " + dollar + " (Test result - " + result + ")");
+        float inEuro = 140;
+        float inDollar = 120;
+        float expected = 2;
+        float outEuro = Converter.rubleToEuro(inEuro);
+        boolean passedEuro = expected == outEuro;
+        float outDollar = Converter.rubleToDollar(inDollar);
+        boolean passedDollar = expected == outDollar;
+        System.out.println(inEuro + " rubles are " + outEuro + " (Test result - " + passedEuro + ")");
+        System.out.println(inDollar + " rubles are " + outDollar + " (Test result - " + passedDollar + ")");
     }
 }
