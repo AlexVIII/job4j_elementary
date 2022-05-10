@@ -1,6 +1,6 @@
 package ru.job4j.math;
 
-import static ru.job4j.math.MathFunction.*;
+import static ru.job4j.math.MathCalculator.*;
 
 public class MathFunction {
 
