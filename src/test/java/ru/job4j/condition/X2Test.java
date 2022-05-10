@@ -6,18 +6,20 @@ import org.junit.Assert;
 public class X2Test {
 
     @Test
-    public void whenA1B1C1X1() {
+    public void whenA1B1C1X1ThenRsl3() {
+        int a, b, c, x, expected, rsl;
         a = 1;
         b = 1;
         c = 1;
         x = 1;
         expected = 3;
-        int rsl = X2.calc(a, b, c, x);
+        rsl = X2.calc(a, b, c, x);
         Assert.assertEquals(expected, rsl);
     }
 
     @Test
-    public void whenA0B1C1X1() {
+    public void whenA0B1C1X1ThenRsl2() {
+        int a, b, c, x, expected, rsl;
         a = 0;
         b = 1;
         c = 1;
@@ -28,7 +30,8 @@ public class X2Test {
     }
 
     @Test
-    public void whenA1B1C0X1() {
+    public void whenA1B1C0X1ThenRsl2() {
+        int a, b, c, x, expected, rsl;
         a = 1;
         b = 1;
         c = 0;
@@ -39,7 +42,8 @@ public class X2Test {
     }
 
     @Test
-    public void whenA1B1C1X0() {
+    public void whenA1B1C1X0ThenRsl1() {
+        int a, b, c, x, expected, rsl;
         a = 1;
         b = 1;
         c = 1;
@@ -48,6 +52,4 @@ public class X2Test {
         rsl = X2.calc(a, b, c, x);
         Assert.assertEquals(expected, rsl);
     }
-
-    int a, b, c, x, expected, rsl;
 }
