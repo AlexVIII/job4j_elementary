@@ -1,4 +1,6 @@
-package ru.job4j.math;
+package ru.job4j.calculator;
+
+import ru.job4j.math.MathFunction;
 
 public class MathCalculator {
     public static double diffPlusDiv(double first, double second) {

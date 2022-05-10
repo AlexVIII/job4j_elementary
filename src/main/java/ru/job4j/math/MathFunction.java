@@ -1,7 +1,5 @@
 package ru.job4j.math;
 
-import static ru.job4j.math.MathCalculator.*;
-
 public class MathFunction {
 
     public static double diff(double first, double second) {
