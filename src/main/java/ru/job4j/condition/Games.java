@@ -4,7 +4,7 @@ public class Games {
     public static void permission(boolean allowByParent, boolean hasMoney) {
         boolean join;
         join = allowByParent && hasMoney;
-        if (join == true ); {
+        if (join = true ); {
             System.out.println("I can go to the computer club.");
         } else {
             System.out.println("I can't.");
