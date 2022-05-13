@@ -5,7 +5,6 @@ import org.junit.Test;
 
 public class DummyBotTest {
 
-
     @Test
     public void whenUnknownBot() {
         String in = "Сколько будет 2 + 2?";
