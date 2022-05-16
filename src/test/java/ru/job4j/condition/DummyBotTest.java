@@ -21,11 +21,11 @@ public class DummyBotTest {
         Assert.assertEquals(expected, result);
     }
 
- //   @Test
-  //  public void whenUBot() {
-   //     String in = "Привет, Бот.";
-    //    String result = DummyBot.answer(in);
-     //   String expected = "Приветик, умник.";
-      //  Assert.assertEquals(expected, result);
-   // }
+    @Test
+    public void whenUBot() {
+        String in = "Привет, Бот.";
+        String result = DummyBot.answer(in);
+        String expected = "Приветик, умник.";
+        Assert.assertEquals(expected, result);
+    }
 }
