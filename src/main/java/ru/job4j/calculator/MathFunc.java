@@ -2,7 +2,7 @@ package ru.job4j.calculator;
 
 public class MathFunc {
     public static int func1(int x) {
-    return  x * x + 1;
+        return  x * x + 1;
 }
 
     public static int func2(int x) {
@@ -15,5 +15,4 @@ public class MathFunc {
         int result3 = result1 + result2;
         System.out.println("Ответ result = " + result3);
     }
-
 }
