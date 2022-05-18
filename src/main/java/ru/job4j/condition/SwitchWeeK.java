@@ -3,8 +3,7 @@ package ru.job4j.condition;
 public class SwitchWeeK {
     public static String nameDay(int day) {
         String name;
-        if (day >= 1 && day <= 7) {
-            switch (day) {
+        switch (day) {
                 case 1:
                     name = "Понедельник";
                     break;
@@ -28,9 +27,9 @@ public class SwitchWeeK {
                     break;
                 default:
                     name = "NotDAY";
-            }
-            return name;
         }
+            return name;
     }
 }
+
 
