@@ -25,4 +25,13 @@ public class FactorialTest {
         int expented = 1680;
         Assert.assertEquals(expented, result);
     }
+
+    @Test
+    public void factorialNumbersFrom10To13Then17160() {
+        int start = 10;
+        int finish = 13;
+        int result = Factorial.factorialNumbers(start, finish);
+        int expented = 17160;
+        Assert.assertEquals(expented, result);
+    }
 }
