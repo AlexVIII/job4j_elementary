@@ -7,20 +7,38 @@ import org.junit.Assert;
 public class FitnessTest {
 
     @Test
-    public void whenIvan1Nik5Then4() {
-        int ivan = 1;
-        int nik = 5;
+    public void whenIvanGreatNik() {
+        int ivan = 95;
+        int nik = 90;
         int result = Fitness.calc(ivan, nik);
-        int expented = 4;
-        Assert.assertEquals(expented, result);
+        int expected = 0;
+        Assert.assertEquals(expected, result);
     }
 
     @Test
-    public void whenIvan10Nik25Then3() {
-        int ivan = 10;
-        int nik = 25;
+    public void whenIvanLessByOneNik() {
+        int ivan = 90;
+        int nik = 95;
         int result = Fitness.calc(ivan, nik);
-        int expented = 3;
-        Assert.assertEquals(expented, result);
+        int expected = 1;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenIvanLessByFewNik() {
+        int ivan = 50;
+        int nik = 90;
+        int result = Fitness.calc(ivan, nik);
+        int expected = 2;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenIvanEqualsNik() {
+        int ivan = 90;
+        int nik = 90;
+        int result = Fitness.calc(ivan, nik);
+        int expected = 0;
+        Assert.assertEquals(expected, result);
     }
 }
