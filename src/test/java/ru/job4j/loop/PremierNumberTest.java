@@ -14,10 +14,19 @@ public class PremierNumberTest {
     }
 
     @Test
-    public void when100ThenCountSimple3() {
+    public void when100ThenCountSimple26() {
         int in = 100;
         int result = PremierNumber.calc(in);
         int expented = 26;
         Assert.assertEquals(expented, result);
     }
+
+    @Test
+    public void when50ThenCountSimple16() {
+        int in = 50;
+        int result = PremierNumber.calc(in);
+        int expented = 16;
+        Assert.assertEquals(expented, result);
+    }
+
 }
