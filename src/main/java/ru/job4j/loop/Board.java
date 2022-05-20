@@ -18,8 +18,8 @@ public class Board {
         public static void main(String[] args) {
             paint(3, 3);
             System.out.println();
-            paint(2,5);
+            paint(2, 5);
             System.out.println();
-            paint(5,2);
+            paint(5, 2);
         }
     }
