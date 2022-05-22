@@ -6,7 +6,7 @@ import org.junit.Test;
 public class CheckPrimeNumberTest {
     @Test
     public void when5() {
-        int number = 5;
+    int number = 5;
         boolean result = CheckPrimeNumber.check(number);
         Assert.assertTrue(result);
     }
