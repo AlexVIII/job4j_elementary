@@ -14,8 +14,12 @@ public class ArrayDefinition {
         names[0] = "Alex";
         names[1] = "Bob";
         names[2] = "Elena";
-        String name = names[0];
-        System.out.println(name);
+        names[3] = "Helen";
+        String nameA = names[0];
+        String nameB = names[1];
+        String nameE = names[2];
+        String nameH = names[3];
+        System.out.println(nameA);
 
     }
 }
