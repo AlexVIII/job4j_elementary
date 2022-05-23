@@ -2,16 +2,12 @@ package ru.job4j.array;
 
 public class ArrayLoop {
     public static void main(String[] args) {
+        int[] dogs = new int[5];
+        for (int index = 0; index < 5; index++) {
+            dogs[index] = index * 2 + 3;                             
+        }
+        for (int index = 0; index < 5; index++) {
+            System.out.println(dogs[index]);
+        }
     }
 }
-//1. Создайте класс ru.job4j.array.ArrayLoop. В нем создайте метод main,
-//
-//2. Внутри метода main объявите массив int на 5 элементов. Через цикл for заполните его значениями функции y = index * 2 + 3;
-//
-//java
-//numbers[index] = index * 2 + 3;
-//3. Ниже, через второй цикл for выведите все элементы массива на консоль.
-//
-//4. Залейте код в репозиторий, оставьте ссылку на коммит.
-//
-//5. Переведите ответственного на Петра Арсентьева.
