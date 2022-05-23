@@ -6,8 +6,8 @@ public class ArrayLoop {
         for (int index = 0; index < 5; index++) {
             dogs[index] = index * 2 + 3;                             
         }
-        for (int index = 0; index < 5; index++) {
-            System.out.println(dogs[index]);
+        for (int cat:dogs) {
+            System.out.println(cat);
         }
     }
 }
