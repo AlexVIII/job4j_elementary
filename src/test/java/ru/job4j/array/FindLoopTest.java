@@ -24,4 +24,26 @@ public class FindLoopTest {
         int expected = -1;
         Assert.assertEquals(expected, result);
      }
+
+    @Test
+    public void whenDiapozonHas3Then3() {
+        int[] data = {1, 5, 3, 8, 7, 4};
+        int start = 2;
+        int finish = 5;
+        int el = 8;
+        int expected = 3;
+        int result = FindLoop.indexIndexRange(data, el, start, finish);
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenDiapozonFrom0To4ThenThen2() {
+        int[] data = {1, 8, 4, 9, 5, 0, 7};
+        int el = 4;
+        int start = 0;
+        int finish = 4;
+        int result = FindLoop.indexIndexRange(data, el, start, finish);
+        int expected = 2;
+        Assert.assertEquals(expected, result);
+    }
 }
